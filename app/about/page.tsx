@@ -1,5 +1,10 @@
 export const metadata = {
-  title: "About | HK Family Office Policy Intelligence",
+  title: "About — Independent HK Family Office Policy Tracker",
+  description:
+    "HK-MEA Bridge is an independent policy tracker for legal, tax, and compliance professionals in Hong Kong managing Middle Eastern capital. Official sources only. No sponsored content.",
+  alternates: {
+    canonical: "https://hk-mea-bridge.vercel.app/about",
+  },
 };
 
 export default function AboutPage() {

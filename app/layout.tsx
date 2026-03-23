@@ -5,14 +5,33 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "HK Family Office Policy Intelligence",
+  title: {
+    default: "HK Family Office Policy Intelligence | HKMA IRD Updates 2026",
+    template: "%s | HK-MEA Bridge",
+  },
   description:
-    "Weekly regulatory updates from HKMA, IRD & InvestHK — curated for family office practitioners in Hong Kong.",
+    "Weekly verified policy updates for Hong Kong family office practitioners. Track FIHV tax concession, New CIES 2026, Substantial Activities Requirement, and SFO licensing exemption — official sources only.",
+  keywords: [
+    "Hong Kong family office policy 2026",
+    "FIHV tax concession Hong Kong",
+    "New CIES private holding company 2026",
+    "Substantial Activities Requirement HK family office",
+    "SFO licensing exemption SFC 2026",
+    "HK$240 million AUM threshold family office",
+    "UAE central bank CMU Hong Kong",
+    "intra-group transfer stamp duty relief HK 2026",
+    "HKMA family office update",
+    "IRD family office tax",
+  ],
   openGraph: {
-    title: "HK Family Office Policy Intelligence",
+    title: "HK Family Office Policy Intelligence | HKMA IRD Updates 2026",
     description:
-      "Weekly regulatory updates from HKMA, IRD & InvestHK — curated for family office practitioners in Hong Kong.",
+      "Weekly verified policy updates for Hong Kong family office practitioners. FIHV, New CIES, Substantial Activities — official sources only.",
     type: "website",
+    url: "https://hk-mea-bridge.vercel.app",
+  },
+  alternates: {
+    canonical: "https://hk-mea-bridge.vercel.app",
   },
 };
 

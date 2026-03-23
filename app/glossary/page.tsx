@@ -1,7 +1,20 @@
 export const metadata = {
-  title: "Glossary | HK Family Office Policy Intelligence",
+  title: "Glossary — FIHV, New CIES, Substantial Activities, SFO Exemption",
   description:
-    "Key terms for Hong Kong family office compliance: FIHV, CIES, Substantial Activities Requirement, SFO licensing exemption, and more.",
+    "Plain-English definitions of Hong Kong family office compliance terms: FIHV tax concession, New CIES 2026 requirements, Substantial Activities Requirement (2 employees, HK$2M expenditure), SFO licensing exemption, and CMU UAE-HK connection.",
+  keywords: [
+    "FIHV definition Hong Kong",
+    "family-owned investment holding vehicle",
+    "New CIES 2026 requirements",
+    "Substantial Activities Requirement family office",
+    "SFO licensing exemption Hong Kong",
+    "CMU Central Moneymarkets Unit UAE",
+    "HK$240 million AUM threshold",
+    "proposed digital asset tax exemption HK",
+  ],
+  alternates: {
+    canonical: "https://hk-mea-bridge.vercel.app/glossary",
+  },
 };
 
 const terms = [

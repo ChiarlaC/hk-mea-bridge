@@ -1,5 +1,14 @@
 import SubscribeForm from "@/components/SubscribeForm";
 
+export const metadata = {
+  title: "HK Family Office Policy, Decoded | FIHV · New CIES · HKMA 2026",
+  description:
+    "Verified weekly updates on Hong Kong family office regulations: FIHV tax concession, New CIES private holding company rule 2026, Substantial Activities Requirement, and SFO licensing exemption. Official sources only.",
+  alternates: {
+    canonical: "https://hk-mea-bridge.vercel.app",
+  },
+};
+
 const updates = [
   {
     date: "Mar 18, 2026",
