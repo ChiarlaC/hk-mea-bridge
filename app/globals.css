@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+:root {
+  --gold: #C9963A;
+  --gold-light: #E8B86D;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
