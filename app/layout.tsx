@@ -52,6 +52,9 @@ export default function RootLayout({
               <a href="/glossary" className="hover:text-gray-900 transition-colors">
                 Glossary
               </a>
+              <a href="/checklist" className="hover:text-gray-900 transition-colors">
+                Checklist
+              </a>
               <a href="/about" className="hover:text-gray-900 transition-colors">
                 About
               </a>
