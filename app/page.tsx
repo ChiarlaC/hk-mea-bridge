@@ -78,6 +78,18 @@ export default function Home() {
           <p className="text-xs text-gray-400 mt-3">
             No spam. Unsubscribe anytime.
           </p>
+          <div className="mt-6 pt-6 border-t border-gray-200">
+            <a
+              href="/checklist"
+              className="inline-flex items-center gap-2 text-sm font-medium hover:opacity-80 transition-opacity"
+              style={{ color: "var(--gold)" }}
+            >
+              <span className="text-xs font-semibold uppercase tracking-widest border rounded-full px-2 py-0.5" style={{ borderColor: "var(--gold)" }}>
+                New
+              </span>
+              FIHV Tax Concession — Annual Compliance Checklist 2026 →
+            </a>
+          </div>
         </div>
       </div>
 
@@ -147,6 +159,16 @@ export default function Home() {
               <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-5">
                 Key Resources
               </p>
+              <a
+                href="/checklist"
+                className="flex items-center justify-between text-sm font-semibold py-2 border-b"
+                style={{ color: "var(--gold)", borderColor: "var(--gold)" }}
+              >
+                <span>FIHV Compliance Checklist 2026</span>
+                <span className="text-xs font-semibold uppercase tracking-widest border rounded-full px-2 py-0.5 ml-2" style={{ borderColor: "var(--gold)" }}>
+                  New
+                </span>
+              </a>
               <a
                 href="/glossary#fihv"
                 className="block text-sm text-gray-600 hover:text-gray-900 transition-colors py-2 border-b border-gray-100"
