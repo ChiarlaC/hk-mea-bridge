@@ -17,6 +17,8 @@ const updates = [
       "Inland Revenue (Amendment) Bill 2026 introduced to Legislative Council",
     summary:
       "Covers expansion of family office tax concessions including proposed qualifying asset extensions. First and Second Reading completed. Subject to legislative approval.",
+    practitionerNote:
+      "The Bill's progression to LegCo marks a formal legislative commitment — but enactment timelines remain uncertain. Practitioners drafting family office structures that anticipate digital asset or precious metals inclusion should build in contingency provisions until Royal Assent is confirmed. Do not treat proposed expansions as current law.",
     url: "https://www.ird.gov.hk/eng/ppr/archives/26031601.htm",
     tag: "Legislative Update",
     proposed: true,
@@ -27,6 +29,8 @@ const updates = [
     title: "Private holding company rule updated under New CIES",
     summary:
       "Applicants may now use a private company incorporated less than six months prior for their CIES application. The company must be structured as an FIHV or FIHV Special Purpose Entity and meet the HK$240M AUM and substantial activities requirements.",
+    practitionerNote:
+      "Previously, the holding vehicle needed to be an established entity — this change compresses the pre-application setup timeline. Legal teams should note that the 6-month incorporation window is measured at the date of application, not approval. The AUM and Substantial Activities thresholds remain unchanged and must be met at application stage.",
     url: "https://www.newcies.gov.hk/en/new-measures/",
     tag: "Policy Update",
     proposed: false,
@@ -37,6 +41,8 @@ const updates = [
     title: "Two-year milestone: 3,166 applications, HK$95B expected investment",
     summary:
       "The New Capital Investment Entrant Scheme recorded 3,166 total applications with HK$95 billion in expected investment at its two-year mark. Application volume grew 145% in the scheme's second year.",
+    practitionerNote:
+      "The 145% year-on-year growth figure reflects accelerating inbound interest, not approval rates. Approved applications stood at 1,762 — a 56% approval rate. For advisors managing client expectations, this gap between application volume and approvals underlines the importance of thorough pre-submission due diligence.",
     url: "https://www.newcies.gov.hk/en/resources/news/two-year-milestone-new-capital-investment-entrant-scheme-attracts-nearly-3-200-applications-with-expected-investment-of-about-hk-95-billion-reflecting-global-confidence-in-hong-kong-with-photos/",
     tag: "Market Data",
     proposed: false,
@@ -109,6 +115,19 @@ export default function Home() {
                   <p className="text-gray-500 leading-relaxed mb-4">
                     {item.summary}
                   </p>
+                  {item.practitionerNote && (
+                    <div className="border-l-2 pl-4 mb-5" style={{ borderColor: "var(--gold)" }}>
+                      <p className="text-xs font-semibold uppercase tracking-widest mb-2" style={{ color: "var(--gold)" }}>
+                        Practitioner Note
+                      </p>
+                      <p className="text-sm text-gray-600 leading-relaxed">
+                        {item.practitionerNote}
+                      </p>
+                      <p className="text-xs text-gray-400 mt-2">
+                        Consult qualified legal or tax counsel before acting on any policy change.
+                      </p>
+                    </div>
+                  )}
                   <a
                     href={item.url}
                     target="_blank"
