@@ -27,6 +27,10 @@ const terms = [
       "Important: Digital assets and precious metals are proposed qualifying assets under the Inland Revenue (Amendment) Bill 2026, introduced to LegCo on March 18, 2026. They are not yet in effect and are subject to legislative approval.",
     ],
     source: "IRD — Section 14P, Inland Revenue Ordinance",
+    related: [
+      { label: "FIHV 2026 Annual Compliance Checklist", href: "/checklist" },
+      { label: "Substantial Activities Requirement", href: "/glossary#substantial-activities" },
+    ],
   },
   {
     term: "Substantial Activities Requirement",
@@ -38,6 +42,10 @@ const terms = [
       "These requirements apply on a continuing basis — failure to maintain them may result in loss of the tax concession.",
     ],
     source: "IRD — Schedule 16C, Inland Revenue Ordinance",
+    related: [
+      { label: "FIHV 2026 Annual Compliance Checklist", href: "/checklist#section-3" },
+      { label: "FIHV Tax Concession Overview", href: "/glossary#fihv" },
+    ],
   },
   {
     term: "New CIES — New Capital Investment Entrant Scheme",
@@ -49,6 +57,10 @@ const terms = [
       "As of March 1, 2026: applicants may now use a newly incorporated private company (incorporated less than 6 months prior) as the investment holding vehicle, provided it is structured as an FIHV or FIHV Special Purpose Entity meeting the HK$240M AUM and Substantial Activities requirements.",
     ],
     source: "New CIES Office — Scheme Rules and Guidebook",
+    related: [
+      { label: "FIHV Tax Concession Overview", href: "/glossary#fihv" },
+      { label: "Mar 2026: Private holding company rule update", href: "/#updates" },
+    ],
   },
   {
     term: "SFO Licensing Exemption (SFC)",
@@ -60,6 +72,10 @@ const terms = [
       "Practitioners should review the SFC's licensing FAQ on family offices for the precise legal definition of 'single family' and permissible activities.",
     ],
     source: "SFC — Securities and Futures Ordinance (Cap. 571)",
+    related: [
+      { label: "FIHV Tax Concession Overview", href: "/glossary#fihv" },
+      { label: "Ongoing Compliance — Checklist Section 5", href: "/checklist" },
+    ],
   },
   {
     term: "CMU — Central Moneymarkets Unit",
@@ -70,6 +86,9 @@ const terms = [
       "For family offices managing cross-border UAE-HK structures, the CBUAE's CMU membership reduces settlement friction on Sukuk and other Gulf-originated debt instruments held via Hong Kong.",
     ],
     source: "HKMA — Central Moneymarkets Unit",
+    related: [
+      { label: "New CIES — Investment Scheme Overview", href: "/glossary#new-cies" },
+    ],
   },
 ];
 
@@ -101,6 +120,24 @@ export default function GlossaryPage() {
               ))}
             </div>
             <p className="mt-4 text-xs text-gray-400">{item.source}</p>
+            {item.related && item.related.length > 0 && (
+              <div className="mt-5 pt-4 border-t border-gray-50">
+                <p className="text-xs font-semibold uppercase tracking-widest text-gray-300 mb-2">
+                  Related
+                </p>
+                <div className="flex flex-col gap-1">
+                  {item.related.map((r) => (
+                    <a
+                      key={r.href}
+                      href={r.href}
+                      className="text-xs text-gray-400 hover:text-gray-700 transition-colors"
+                    >
+                      → {r.label}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
           </article>
         ))}
       </div>
