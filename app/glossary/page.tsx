@@ -23,7 +23,7 @@ const terms = [
     anchor: "fihv",
     body: [
       "An FIHV is a legal entity established exclusively to hold and manage investments on behalf of a single family. Under the Inland Revenue Ordinance Schedule 16C, profits derived by an eligible FIHV from qualifying transactions are subject to a 0% tax rate.",
-      "Current qualifying assets include: equities, debt securities, futures and FX contracts, bank deposits, certificates of deposit (capped at HK$3M), exchange-traded commodities, OTC derivative products, and interests in SFC-authorised funds.",
+      "Current qualifying assets include: equities, debt securities, futures and FX contracts, bank deposits, certificates of deposit, exchange-traded commodities, OTC derivative products, and interests in SFC-authorised funds.",
       "Important: Digital assets and precious metals are proposed qualifying assets under the Inland Revenue (Amendment) Bill 2026, introduced to LegCo on March 18, 2026. They are not yet in effect and are subject to legislative approval.",
     ],
     source: "IRD — Section 14P, Inland Revenue Ordinance",
